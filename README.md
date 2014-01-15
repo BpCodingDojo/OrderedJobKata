@@ -21,7 +21,9 @@ Given you’re passed an empty string (no jobs), the result should be an empty s
 ##Step 2 – Single Job
 Given the following job structure:
 
-**a =>**
+```
+a =>
+```
 
 The result should be a sequence consisting of a single job **a**.
 
@@ -43,11 +45,11 @@ The result should be a sequence containing all three jobs **abc** in no signific
 
 Given the following job structure:
 
-**a =>**
-
-**b => c**
-
-**c =>**
+```
+a =>
+b => c
+c =>
+```
 
 The result should be a sequence that positions **c** before **b**, containing all three jobs **abc**.
 
@@ -56,17 +58,14 @@ The result should be a sequence that positions **c** before **b**, containing al
 
 Given the following job structure:
 
-**a =>**
-
-**b => c**
-
-**c => f**
-
-**d => a**
-
-**e => b**
-
-**f =>**
+```
+a =>
+b => c
+c => f
+d => a
+e => b
+f =>
+```
 
 The result should be a sequence that positions **f** before **c**, **c** before **b**, **b** before **e** and **a** before **d** containing all six jobs **abcdef**.
 
@@ -75,11 +74,11 @@ The result should be a sequence that positions **f** before **c**, **c** before 
 
 Given the following job structure:
 
-**a =>**
-
-**b =>**
-
-**c => c**
+```
+a =>
+b =>
+c => c
+```
 
 The result should be an error stating that jobs can’t depend on themselves.
 
@@ -88,16 +87,13 @@ The result should be an error stating that jobs can’t depend on themselves.
 
 Given the following job structure:
 
-**a =>**
-
-**b => c**
-
-**c => f**
-
-**d => a**
-
-**e =>**
-
-**f => b**
+```
+a =>
+b => c
+c => f
+d => a
+e =>
+f => b
+```
 
 The result should be an error stating that jobs can’t have circular dependencies.
