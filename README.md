@@ -6,7 +6,9 @@ Kata for the dojo at 2014.01.15.
 
 #The Kata
 
-Imagine we have a list of jobs, each represented by a character. Because certain jobs must be done before others, a job may have a dependency on another job. For example, a may depend on b, meaning the final sequence of jobs should place b before a. If a has no dependency, the position of a in the final sequence does not matter.
+Imagine we have a list of jobs, each represented by a character. Because certain jobs must be done before others, a job may have a dependency on another job. 
+For example, **a** may depend on **b**, meaning the final sequence of jobs should place **b** before **a**. If **a** has no dependency, the position of **a** in the final sequence 
+does not matter.
 
 The goal of the kata is to parse the job dependency structure and produce a sequence of jobs in the order that observes their dependency chain.
 
@@ -28,10 +30,9 @@ The result should be a sequence consisting of a single job **a**.
 
 Given the following job structure:
 
+
 **a =>**
-
 **b =>**
-
 **c =>**
 
 The result should be a sequence containing all three jobs **abc** in no significant order.
